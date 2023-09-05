@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void PrintHello(string str)
+void Print(string str)
 {
 	cout << str << endl;
 }
