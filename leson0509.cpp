@@ -1,11 +1,23 @@
 #include <iostream>
 using namespace std;
 
-void PrintHello(string str)
+void Init(int arr[], int size)
 {
-	cout << str << endl;
+	for (int i = 0; i < size; i++)
+	{
+		arr[i] = i + 1;
+	}
+}
+void Print(int arr[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << arr[i] << "\t";
+	}
 }
 int main()
 {
-	Print("Hello world");
+	int arr[5];
+	Init(arr, 5);
+	Print(arr, 5);
 }
